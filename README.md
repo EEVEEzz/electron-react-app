@@ -1,6 +1,6 @@
 ### Vite - Electron - React - MongoDB
 
-**The following is my example of building out an ELectron App with React as the frontend and serving data from MongoDB.
+**The following is my example of building out an Electron App with React as the frontend and serving data from MongoDB.
 I am not formally a developer and followed the Vite, Electron and MongoDB documentation, however I may not follow best practice.**
 
 On that note, this will get you started with Electron React and MongoDB, with a few extras I threw in such as `TailWindCSS` and `DaisyUI`.
