@@ -1,19 +1,15 @@
-import Versions from './components/Versions'
-import { Outlet } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import { useSelector } from 'react-redux'
-import { useEffect, useState } from 'react'
+import { HashRouter  as Router, Route, Routes, Link } from 'react-router-dom'
+import icons from './assets/icons.svg'
+import Home from './pages/Home'
 
 function App() {
-  const [theme, setTheme] = useState('dracula')
   return (
-    <div className="">
-      <div id="submain" data-theme={theme} className="">
-        <Outlet />
-      </div>
-      <ToastContainer />
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 
